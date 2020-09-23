@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="NavigationDrawerPopUpMenu2.UserControlProfile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NavigationDrawerPopUpMenu2"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             Background="#BCBEC0">
+    <Grid Width="1010" Height="538"   HorizontalAlignment="Left" Loaded="Grid_Loaded">
+        <Border Background ="White" Margin="10,10,510,10"  CornerRadius="30">
+            <Grid Width="500" HorizontalAlignment="Left">
+                <Grid Height="200" VerticalAlignment="Top" Margin="0,0,325,0">
+                    <Image Name ="ProfileImage">
+                    </Image>
+                    <Button Content="Change Picture" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="127" Height="26" Margin="10,165,0,0" Click="Button_Click"/>
+
+                </Grid>
+                <Grid Width="325" Height="200" HorizontalAlignment="Right" VerticalAlignment="Top">
+                    <TextBlock Name="UserName" Margin="0,46,50,74" Foreground="#002D6D"  FontSize="25"/>
+                    <TextBlock Foreground="#002D6D" Margin="0,83,0,47"  FontSize="20">
+                        Job:
+                    </TextBlock>
+                    <TextBlock Foreground="#002D6D" Margin="0,110,0,20"  FontSize="20">
+                    Rank:
+                    </TextBlock>
+                    <TextBlock Name="JobName" Margin="40,83,10,37" Foreground="#002D6D"  FontSize="20"/>
+                    <TextBlock Name="RankName" Margin="50,110,0,10" Foreground="#002D6D"  FontSize="20"/>
+                </Grid>
+                <Grid Width="505" HorizontalAlignment="Left" Margin="0,208,0,0">
+                    <TextBlock Name="Description" TextWrapping="WrapWithOverflow" Margin="28,44,28,32" Foreground="#002D6D"  FontSize="20"/>
+                    <TextBlock Margin="28,10,28,271" Foreground="#002D6D"  FontSize="18">Description</TextBlock>
+                </Grid>
+                <Grid Height="2" Width="450" Background="#0260E8" Margin="0,-35,0,0">
+
+                </Grid>
+            </Grid>
+        </Border>
+        <Border Width="490" HorizontalAlignment="Right" Background ="White"  Margin="0,10,10,10" CornerRadius="30">
+            <Grid Width="500" HorizontalAlignment="Right">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top"  Foreground="#002D6D"  FontSize="25">Your events</TextBlock>
+                <Grid Height="2" Width="450" Background="#0260E8" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="29,30,21,0">
+
+                </Grid>
+                <Image Name="EventsChart" Width="500" Height="450">
+                    
+                </Image>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

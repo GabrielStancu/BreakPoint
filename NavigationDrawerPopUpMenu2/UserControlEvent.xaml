@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="NavigationDrawerPopUpMenu2.UserControlFood"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NavigationDrawerPopUpMenu2"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             Background="White">
+    <Grid x:Name="GridMain" Height="538" Width="1010" Loaded="GridMain_Loaded">
+        <Grid x:Name="SelectType" Width="600" HorizontalAlignment="Left">
+            <Border CornerRadius="8" Margin="50,460,50,15" Background="#FF5C99D6">
+            <TextBox BorderThickness="0" TextWrapping="WrapWithOverflow" FontSize="30" VerticalAlignment="Top" Name="Descriere" Margin="6,5,4,4" Foreground="#FFFFFF" >
+               </TextBox>
+            </Border>
+            
+            <StackPanel Orientation="Horizontal" Margin="47,0,10,0" Height="315" VerticalAlignment="Bottom">
+                <StackPanel >
+                    <Image Name ="Gaming" Width="135" HorizontalAlignment="Left" Height="90" Margin="10, 5, 20 ,15"/>
+                    <Image Name ="Party" Width="125" HorizontalAlignment="Left" VerticalAlignment="Top" Height="90" Margin="15"/>
+                </StackPanel>
+                <StackPanel >
+                    <Image Name="Movie" Width="135" HorizontalAlignment="Left" Height="90" Margin="15, 5, 15 ,15">
+                    </Image>
+                    <Image Name="PingPong" Width="135" HorizontalAlignment="Left" VerticalAlignment="Top" Height="90" Margin="15"/>
+                </StackPanel>
+                <StackPanel >
+                    <Image Name="Coffee" Width="135" HorizontalAlignment="Left" Height="90" Margin="15, 5, 15 ,15">
+                    </Image>
+                    <Image Name="Restaurant" Width="135" HorizontalAlignment="Left" VerticalAlignment="Top" Height="90" Margin="15"/>
+                </StackPanel>
+            </StackPanel>
+            <TextBlock FontSize="40" Foreground="#FF5C99D6" HorizontalAlignment="Center" Margin="62,48,62,396"><Run FontWeight="Bold" Text="Create your OWN Event!"></Run></TextBlock>
+            <TextBlock FontSize="25" Foreground="#FF5C99D6" HorizontalAlignment="Center" Margin="28,180,213,320" Width="359" >
+                <Bold>
+                       Selectati tipul evenimentului
+                </Bold>
+            </TextBlock>
+            <Grid Background="#FF5C99D6" Height="3" Margin="28,215,30,320" />
+        </Grid>
+        <Grid x:Name="SelectTime" Width="410" HorizontalAlignment="Right" Background="#FF31577E">
+            <StackPanel>
+                <Border Background="White" Margin="40,0,40,0" CornerRadius="8">
+                    <Grid/>
+                </Border>
+                <TextBlock FontSize="25" Foreground="White" Height="27" Margin="40,70,40,0" Text="Date:"></TextBlock>
+                
+                <Border Background="White" Margin="40,10,40,0" CornerRadius="8">
+                    <Grid>
+                        <DatePicker Name="DataEvent" FontSize="24"  Foreground="#000000" BorderThickness="0" Height="40" VerticalAlignment="Top" Margin="0,0,10,0">
+
+                        </DatePicker>
+                       
+                    </Grid>
+                </Border>
+                <TextBlock FontSize="25" Foreground="White" Height="29" Margin="40,40,40,0" Text="Start Hour"></TextBlock>
+                <Border Background="White" Margin="40,10,40,0" CornerRadius="8">
+                    <Grid>
+                        <TextBox x:Name="OraIncepere" FontSize="24"  Foreground="#000000" BorderThickness="0" Height="40" VerticalAlignment="Top"/>
+                    </Grid>
+                </Border>
+                <TextBlock FontSize="25" Foreground="White" Height="27" Margin="40,20,40,0" Text="Finish Hour"></TextBlock>
+                <Border Background="White" Margin="40,10,40,0" CornerRadius="8">
+                    <Grid>
+                        <TextBox x:Name="OraTerminare" FontSize="24"  Foreground="#000000" BorderThickness="0" Height="40" VerticalAlignment="Top"/>
+                    </Grid>
+                </Border>
+            </StackPanel>
+            <Button FontSize="25" Background="#ffa825" Content="Confirm" Height="62" Margin="126,420,127,56" Click="Button_Click"/>
+        </Grid>
+    </Grid>
+</UserControl>
