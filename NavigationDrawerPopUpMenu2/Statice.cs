@@ -17,9 +17,9 @@ namespace NavigationDrawerPopUpMenu2
 
         public static string connStrLocal = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Directory.GetCurrentDirectory() + @"\dbOffice.mdf;Integrated Security=True";
 
-        private static string ipServer = "192.168.43.2";
-        private static string user = "abstract";
-        private static string password = "acon";
+        private static string ipServer = "[enter the server ip here]";
+        private static string user = "[enter the username here]";
+        private static string password = "[enter the password for the user here]";
         public static string connStrOnline = "Data Source=" + ipServer + ",1433;Network Library=DBMSSOCN; Initial Catalog = dbOffice; User ID = "+ user +"; Password = " + password + "; ";
 
         public static string ConnStr = connStrLocal;

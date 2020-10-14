@@ -9,7 +9,7 @@ using System.Windows;
 namespace NavigationDrawerPopUpMenu2
 {
     /// <summary>
-    /// Interação lógica para App.xaml
+    /// Logical interface for App.xaml
     /// </summary>
     public partial class App : Application
     {
